@@ -14,15 +14,43 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="" class="logo">
-        <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-image" />
-      </a>
-      <a href="" class="user">
-        <span class="user-name">IngVar</span>
-        <img src="img/avatar.jpg" alt="" class="user-photo" />
-      </a>
-    </header>
+    <div class="app">
+      <header class="header">
+        <a href="" class="logo">
+          <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-image" />
+        </a>
+        <a href="" class="user">
+          <span class="user-name">IngVar</span>
+          <img src="img/avatar.jpg" alt="" class="user-photo" />
+        </a>
+      </header>
+
+      <section class="film">
+        <img src="img/film-logo.png" alt="Mortal Kombat" class="film-logo" />
+
+        <div class="tags">
+          <span class="date">2021</span>
+          <span class="span genre">боевик, фентези, фантастика</span>
+          <span class="country">США</span>
+          <span class="age">18+</span>
+        </div>
+        <!-- /.tags -->
+
+        <p class="description">
+          Продолжение легендарного фильма из 90-х. Предстоит по-настоящему
+          смертельная битва, где останется только сильнейший
+        </p>
+
+        <div class="button-group">
+          <button class="button button-primary">Предзаказ фильма</button>
+          <button class="button button-default">
+            <img src="img/play.svg" alt="icon: play" class="button-icon" />
+            <span class="button-text">Смотреть трейлер</span>
+          </button>
+        </div>
+        <!-- /.button-group -->
+      </section>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
