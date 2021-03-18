@@ -44,8 +44,12 @@ a {
 }
 
 .app {
-  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-    url("../img/cover-image.jpg") no-repeat center right;
+  background: linear-gradient(
+    90deg,
+    #010202 0%,
+    #010202 43%,
+    rgba(1, 2, 2, 0.2) 90%
+  );
   min-height: 100vh;
   color: white;
 }
@@ -112,20 +116,19 @@ a {
   vertical-align: text-bottom;
 }
 
-@media (max-width: 1200px) {
-  .app {
-    background-size: 50%;
-  }
-}
-
 @media (max-width: 768px) {
   .app {
     height: auto;
-    padding-bottom: 400px;
+    padding-bottom: 570px;
     background-position: bottom center;
+    /* size-image=70% more stretch */
+    background: url(../img/cover-image.jpg) no-repeat bottom center / 70%;
   }
 
-  /* place block film witout film-logo on center*/
+  video {
+    display: none;
+  }
+  /* i want place block filmElem witout film-logoElem on center*/
   .tags,
   .description,
   .button-group {
@@ -148,6 +151,14 @@ a {
     width: 100%;
   }
 }
+/* background image move smoter   */
+@media (max-width: 690px) {
+  .app {
+    padding-bottom: 550px;
+    background-size: 500px;
+  }
+}
+/* end my comment  */
 
 @media (max-width: 576px) {
   .tags,
@@ -169,7 +180,7 @@ a {
   }
 
   .app {
-    padding-bottom: 350px;
+    padding-bottom: 320px;
     background-size: 300px;
   }
 }
