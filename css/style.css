@@ -45,7 +45,7 @@ a {
 
 .app {
   background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
-    url("../img/cover-image.jpg") no-repeat top right;
+    url("../img/cover-image.jpg") no-repeat center right;
   min-height: 100vh;
   color: white;
 }
@@ -66,10 +66,12 @@ a {
   color: #e5e5e5;
   font-size: 16px;
   line-height: 140%;
+  flex-wrap: wrap;
 }
 
 .tags > * {
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .age {
@@ -108,4 +110,66 @@ a {
 .button-text {
   margin-left: 10px;
   vertical-align: text-bottom;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 400px;
+    background-position: bottom center;
+  }
+
+  /* place block film witout film-logo on center*/
+  .tags,
+  .description,
+  .button-group {
+    width: 410px;
+    margin: auto;
+    margin-bottom: 18px;
+  }
+  /* end place block film witout film-logo on center*/
+
+  .film {
+    padding-top: 2%;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .film-logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .tags,
+  .description,
+  .button-group {
+    width: auto;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .button-text {
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .app {
+    padding-bottom: 350px;
+    background-size: 300px;
+  }
 }
