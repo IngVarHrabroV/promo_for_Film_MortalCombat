@@ -1,5 +1,5 @@
 # promo for Film MortalCombat - training project GloAcademy
-## fulfilleld IngVar_HrabroV
+## fulfilleld project IngVar_HrabroV
 
 ### Technologies:
 - HTML;
