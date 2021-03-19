@@ -1,3 +1,11 @@
-# promo_for_Film_MortalCombat
-Intensive "Promotional site for the film" Mortal Kombat " 
-lesson from glo-academy.org
+# promo_for_Film_MortalCombat - training project GloAcademy
+## fulfilleld IngVar_HrabroV
+
+### Technologies:
+-HTML;
+-CSS;
+-Normilize:
+-JavaScript;
+-JQuery
+-Vide (JQuery)
+-Fansybox (JQuery)
