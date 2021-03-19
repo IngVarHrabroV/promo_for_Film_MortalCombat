@@ -1,4 +1,4 @@
-# promo_for_Film_MortalCombat - training project GloAcademy
+# promo for Film MortalCombat - training project GloAcademy
 ## fulfilleld IngVar_HrabroV
 
 ### Technologies:
