@@ -1,4 +1,4 @@
-# promo for Film MortalCombat - training project GloAcademy
+# promo for the film MortalCombat - training project GloAcademy
 ## fulfilleld project IngVar_HrabroV
 
 ### Technologies:
