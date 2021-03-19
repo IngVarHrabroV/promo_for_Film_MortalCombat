@@ -2,10 +2,10 @@
 ## fulfilleld IngVar_HrabroV
 
 ### Technologies:
--HTML;
--CSS;
--Normilize:
--JavaScript;
--JQuery
--Vide (JQuery)
--Fansybox (JQuery)
+- HTML;
+- CSS;
+- Normilize:
+- JavaScript;
+- JQuery;
+- Vide (JQuery);
+- Fansybox (JQuery).
