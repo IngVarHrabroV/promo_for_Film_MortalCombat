@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
     />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="app">
+    <div class="app" id="app">
       <header class="header">
         <a href="" class="logo">
           <img src="img/logo.svg" alt="Логотип: КиноПульс" class="logo-image" />
@@ -27,6 +31,7 @@
 
       <section class="film">
         <img src="img/film-logo.png" alt="Mortal Kombat" class="film-logo" />
+        <!-- /.logo-->
 
         <div class="tags">
           <span class="date">2021</span>
@@ -40,18 +45,43 @@
           Продолжение легендарного фильма из 90-х. Предстоит по-настоящему
           смертельная битва, где останется только сильнейший
         </p>
+        <!-- /.description-->
 
         <div class="button-group">
-          <button class="button button-primary">Предзаказ фильма</button>
-          <button class="button button-default">
+          <a
+            data-fancybox
+            data-src="#modal"
+            href="javascript:;"
+            class="button button-primary"
+            >Предзаказ фильма
+          </a>
+
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=1ar_V1_uatA"
+            class="button button-default"
+          >
             <img src="img/play.svg" alt="icon: play" class="button-icon" />
             <span class="button-text">Смотреть трейлер</span>
-          </button>
+          </a>
         </div>
         <!-- /.button-group -->
       </section>
     </div>
 
+    <div style="display: none" id="modal">
+      <span class="text-primary">Введите Ваш e-mail:</span>
+      <input type="email" value="your_email@mail.com" size="25" />
+      <button class="sub-button">Подписаться</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
