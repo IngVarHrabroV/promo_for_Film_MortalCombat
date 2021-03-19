@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
     />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -44,14 +48,31 @@
         <!-- /.description-->
 
         <div class="button-group">
-          <button class="button button-primary">Предзаказ фильма</button>
-          <button class="button button-default">
+          <a
+            data-fancybox
+            data-src="#modal"
+            href="javascript:;"
+            class="button button-primary"
+            >Предзаказ фильма
+          </a>
+
+          <a
+            data-fancybox
+            href="https://www.youtube.com/watch?v=1ar_V1_uatA"
+            class="button button-default"
+          >
             <img src="img/play.svg" alt="icon: play" class="button-icon" />
             <span class="button-text">Смотреть трейлер</span>
-          </button>
+          </a>
         </div>
         <!-- /.button-group -->
       </section>
+    </div>
+
+    <div style="display: none" id="modal">
+      <span class="text-primary">Введите Ваш e-mail:</span>
+      <input type="email" value="your_email@mail.com" size="25" />
+      <button class="sub-button">Подписаться</button>
     </div>
 
     <script
@@ -60,6 +81,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/jquery.vide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
